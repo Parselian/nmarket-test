@@ -1,6 +1,400 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #383736;
+  background-color: #e5e5e5; }
+
 .container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  max-width: 1230px; }
+  max-width: 1230px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.button {
+  padding: 12px 50px;
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 6px;
+  background-color: #FFC107;
+  transition: .2s;
+  cursor: pointer; }
+  .button:hover {
+    background-color: #F0B505; }
+  .button:active {
+    background-color: #E1AB08; }
+  .button__icon {
+    margin-right: 8px;
+    max-width: 16px;
+    max-height: 16px; }
+
+.line-break {
+  display: block; }
+
+.text_accent {
+  font-weight: 500;
+  color: #2794DB; }
+
+.text_alert {
+  color: #EB4B51;
+  font-weight: 500; }
+
+.card {
+  position: relative;
+  padding: 24px 32px 24px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.04); }
+  .card__close {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    cursor: pointer; }
+    .card__close-icon, .card__close-bg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .card__close-icon {
+      z-index: 1;
+      width: 24px;
+      height: 24px;
+      transition: .2s;
+      fill: #B2B0AB; }
+    .card__close-bg {
+      width: 28px;
+      height: 28px;
+      z-index: 0;
+      border-radius: 4px;
+      transition: .2s; }
+    .card__close:hover .card__close-icon {
+      fill: #000; }
+    .card__close:hover .card__close-bg {
+      background-color: #F5F4F2; }
+    .card__close:active .card__close-icon {
+      fill: #000; }
+    .card__close:active .card__close-bg {
+      background-color: #E7E4DE; }
+  .card__info {
+    display: flex;
+    align-items: center; }
+    .card__info-img {
+      margin-right: 32px;
+      max-width: 178px; }
+    .card__info-title {
+      margin-bottom: 10px;
+      font-size: 24px; }
+  .card__specs-list {
+    display: flex;
+    flex-wrap: wrap; }
+    .card__specs-list-item {
+      width: 33%;
+      margin-bottom: 12px; }
+      .card__specs-list-item-caption {
+        margin-bottom: 2px;
+        font-size: 12px;
+        color: #989691; }
+      .card__specs-list-item-value {
+        font-size: 14px;
+        font-weight: 500; }
+  .card__status {
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border-radius: 22px; }
+    .card__statuses {
+      display: flex;
+      align-items: center; }
+    .card__status:not(:last-child) {
+      margin-right: 16px; }
+    .card__status_visited {
+      fill: #64B851;
+      color: #64B851;
+      background-color: #f2faf0; }
+    .card__status_accredited {
+      fill: #EB4B51;
+      color: #EB4B51;
+      background-color: #FAF0F0; }
+    .card__status-icon {
+      fill: inherit;
+      margin-right: 10px;
+      max-width: 16px;
+      max-height: 16px; }
+    .card__status-text {
+      font-size: 12px;
+      font-weight: 500; }
+  .card__billings {
+    padding-left: 31px;
+    max-width: 300px;
+    width: 100%;
+    border-left: 1px solid #f0eeeb; }
+    .card__billings-booking {
+      margin-bottom: 5px;
+      font-weight: 400;
+      font-size: 14px; }
+    .card__billings-price {
+      margin-bottom: 12px;
+      font-size: 24px;
+      font-weight: 700; }
+    .card__billings-builder {
+      margin-bottom: 23px;
+      font-size: 14px;
+      color: #989691; }
+
+@media (max-width: 1280px) {
+  .button {
+    padding: 1vw 4.1vw;
+    font-size: 1.2vw;
+    border-radius: 6px; }
+    .button__icon {
+      margin-right: .8vw;
+      max-width: 1.3vw;
+      max-height: 1.3vw; }
+  .card {
+    padding: 1.87vw 2.5vw 1.87vw 1.87vw;
+    border-radius: 8px; }
+    .card__close {
+      top: 2.5vw;
+      right: 2.5vw; }
+      .card__close-icon {
+        width: 1.87vw;
+        height: 1.87vw; }
+      .card__close-bg {
+        width: 2.2vw;
+        height: 2.2vw;
+        border-radius: 4px; }
+    .card__info {
+      display: flex;
+      align-items: center; }
+      .card__info-img {
+        margin-right: 2.5vw;
+        max-width: 13.9vw; }
+      .card__info-title {
+        margin-bottom: .8vw;
+        font-size: 1.87vw; }
+    .card__specs-list-item {
+      margin-bottom: 1vw; }
+      .card__specs-list-item-caption {
+        margin-bottom: 2px;
+        font-size: 1vw; }
+      .card__specs-list-item-value {
+        font-size: 1.1vw; }
+    .card__status {
+      padding: .7vw 1.5vw;
+      border-radius: 22px; }
+      .card__status:not(:last-child) {
+        margin-right: 1.25vw; }
+      .card__status-icon {
+        margin-right: .8vw;
+        max-width: 1.25vw;
+        max-height: 1.25vw; }
+      .card__status-text {
+        font-size: 1vw; }
+    .card__billings {
+      padding-left: 2.5vw;
+      max-width: 23.4vw; }
+      .card__billings-booking {
+        margin-bottom: 5px;
+        font-size: 1.1vw; }
+      .card__billings-price {
+        margin-bottom: 1vw;
+        font-size: 1.87vw; }
+      .card__billings-builder {
+        margin-bottom: 23px;
+        font-size: 1.1vw; } }
+
+@media (max-width: 1140px) {
+  .card__close {
+    top: 2.7vw;
+    right: 2.7vw; }
+    .card__close-icon {
+      width: 2.07vw;
+      height: 2.07vw; }
+    .card__close-bg {
+      width: 2.4vw;
+      height: 2.4vw; }
+  .card__info-img {
+    margin-right: 2.7vw;
+    max-width: 14.1vw; }
+  .card__info-title {
+    margin-bottom: 1vw;
+    font-size: 2.07vw; }
+  .card__specs-list-item {
+    margin-bottom: 1.2vw; }
+    .card__specs-list-item-caption {
+      font-size: 1.2vw; }
+    .card__specs-list-item-value {
+      font-size: 1.3vw; }
+  .card__status {
+    padding: .8vw 1.6vw; }
+    .card__status:not(:last-child) {
+      margin-right: 1.45vw; }
+    .card__status-icon {
+      margin-right: .8vw;
+      max-width: 1.45vw;
+      max-height: 1.45vw; }
+    .card__status-text {
+      font-size: 1.2vw; }
+  .card__billings {
+    padding-left: 2.7vw;
+    max-width: 23.6vw; }
+    .card__billings-booking {
+      font-size: 1.2vw; }
+    .card__billings-price {
+      margin-bottom: 1.2vw;
+      font-size: 2.07vw; }
+    .card__billings-builder {
+      font-size: 1.3vw; } }
+
+@media (max-width: 920px) {
+  .button {
+    padding: 1.4vw 6.1vw; }
+    .button__icon {
+      margin-right: 1vw;
+      max-width: 1.7vw;
+      max-height: 1.7vw; }
+    .button__text {
+      font-size: 1.55vw; }
+  .card {
+    padding: 2.65vw 3.5vw 2.65vw 2.65vw; }
+    .card__close {
+      top: 3.5vw;
+      right: 3.5vw; }
+      .card__close-icon {
+        width: 2.65vw;
+        height: 2.65vw; }
+      .card__close-bg {
+        width: 3vw;
+        height: 3vw; }
+    .card__info {
+      align-items: flex-start; }
+      .card__info-img {
+        max-width: 19.4vw; }
+      .card__info-title {
+        margin-bottom: 1vw;
+        font-size: 2.67vw; }
+    .card__specs-list {
+      margin-bottom: 2vw; }
+      .card__specs-list-item {
+        width: 50%; }
+        .card__specs-list-item-caption {
+          font-size: 1.4vw; }
+        .card__specs-list-item-value {
+          font-size: 1.55vw; }
+    .card__status {
+      padding: 0.9vw 1.8vw; }
+      .card__statuses {
+        flex-direction: column;
+        align-items: flex-start; }
+      .card__status-text {
+        font-size: 1.4vw; }
+      .card__status-icon {
+        max-width: 1.75vw;
+        max-height: 1.75vw; }
+      .card__status:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 1vw; }
+    .card__billings {
+      max-width: 32.7vw; }
+      .card__billings-booking {
+        font-size: 1.6vw; }
+      .card__billings-price {
+        margin-bottom: 1.35vw;
+        font-size: 2.65vw; }
+      .card__billings-builder {
+        margin-bottom: 14vw;
+        font-size: 1.55vw; } }
+
+@media (max-width: 768px) {
+  .button {
+    padding: 12px 50px;
+    width: 100%;
+    justify-content: center; }
+    .button__icon {
+      max-width: 12px;
+      max-height: 12px; }
+    .button__text {
+      font-size: 14px; }
+  .card {
+    padding: 24px 32px;
+    flex-direction: column; }
+    .card__close {
+      top: 32px;
+      right: 32px; }
+      .card__close-icon {
+        width: 24px;
+        height: 24px; }
+      .card__close-bg {
+        width: 28px;
+        height: 28px; }
+    .card__info {
+      padding-bottom: 16px;
+      width: 100%;
+      align-items: flex-start;
+      border-bottom: 1px solid #f0eeeb; }
+      .card__info-img {
+        max-width: 178px; }
+      .card__info-title {
+        margin-bottom: 8px;
+        font-size: 24px; }
+    .card__specs-list {
+      margin-bottom: 2vw; }
+      .card__specs-list-item {
+        margin-bottom: 12px;
+        width: 50%; }
+        .card__specs-list-item-caption {
+          font-size: 12px; }
+        .card__specs-list-item-value {
+          font-size: 14px; }
+    .card__status {
+      padding: 9px 12px; }
+      .card__statuses {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap; }
+      .card__status-text {
+        font-size: 12px; }
+      .card__status-icon {
+        margin-right: 8px;
+        max-width: 16px;
+        max-height: 16px; }
+      .card__status:not(:last-child) {
+        margin-bottom: 8px;
+        margin-right: 16px; }
+      .card__status:last-child {
+        margin-bottom: 8px; }
+    .card__billings {
+      padding-left: 0;
+      padding-top: 24px;
+      max-width: 100%;
+      border-left: none; }
+      .card__billings-booking {
+        font-size: 14px; }
+      .card__billings-price {
+        margin-bottom: 12px;
+        font-size: 24px; }
+      .card__billings-builder {
+        margin-bottom: 24px;
+        font-size: 14px; } }
+
+@media (max-width: 540px) {
+  .container {
+    padding-left: 8px;
+    padding-right: 8px; }
+  .card {
+    padding: 20px; }
+    .card__info {
+      flex-direction: column;
+      align-items: center; }
+    .card__billings-button {
+      padding: 12px 30px; } }

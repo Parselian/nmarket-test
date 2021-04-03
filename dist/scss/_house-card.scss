@@ -1,0 +1,167 @@
+.card {
+  position: relative;
+  padding: 24px 32px 24px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $card-bg-color;
+  border-radius: 8px;
+  box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.04);
+
+  &__close {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    cursor: pointer;
+    &-icon, &-bg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &-icon {
+      z-index: 1;
+      width: 24px;
+      height: 24px;
+      transition: .2s;
+      fill: $inactive-color;
+    }
+    &-bg {
+      width: 28px;
+      height: 28px;
+      z-index: 0;
+      border-radius: 4px;
+      transition: .2s;
+    }
+
+    &:hover {
+      .card {
+        &__close {
+          &-icon {
+            fill: #000;
+          }
+          &-bg {
+            background-color: $hover-close-btn-color;
+          }
+        }
+      }
+    }
+    
+    &:active {
+      .card {
+        &__close {
+          &-icon {
+            fill: #000;
+          }
+          &-bg {
+            background-color: $focus-close-btn-color;
+          }
+        }
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+
+    &-img {
+      margin-right: 32px;
+      max-width: 178px;
+    }
+
+    &-title {
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+  }
+
+  &__specs {
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+
+      &-item {
+        width: 33%;
+        margin-bottom: 12px;
+
+        &-caption {
+          margin-bottom: 2px;
+          font-size: 12px;
+          color: $inactive-text-color;
+        }
+
+        &-value {
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  &__status {
+    &es {
+      display: flex;
+      align-items: center;
+    }
+
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border-radius: 22px;
+
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+
+    &_visited {
+      fill: $approve-color;
+      color: $approve-color;
+      background-color: $approve-bg-color;
+    }
+
+    &_accredited {
+      fill: $error-color;
+      color: $error-color;
+      background-color: $error-bg-color;
+    }
+
+    &-icon {
+      fill: inherit;
+      margin-right: 10px;
+      max-width: 16px;
+      max-height: 16px;
+    }
+
+    &-text {
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+
+  &__billings {
+    padding-left: 31px;
+    max-width: 300px;
+    width: 100%;
+    border-left: 1px solid $border-color;
+
+    &-booking {
+      margin-bottom: 5px;
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    &-price {
+      margin-bottom: 12px;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    &-builder {
+      margin-bottom: 23px;
+      font-size: 14px;
+      color: $inactive-text-color;
+    }
+  }
+}

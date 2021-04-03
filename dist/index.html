@@ -5,18 +5,23 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <title>News widget</title>
 </head>
 <body>
   <div class="container">
     <div class="card">
-      <svg class="card__close">
-        <use xlink:href="./images/symbol/sprite.svg#cross"></use>
-      </svg>
+      <div tabindex="0" class="card__close">
+        <svg class="card__close-icon">
+          <use xlink:href="./images/symbol/sprite.svg#close-icon"></use>
+        </svg>
+        <div class="card__close-bg"></div>
+      </div>
       
       <div class="card__info">
-        <picture class="card__info-img">
-          <img src="./images/room-layout.png" alt="план-схема квартиры">
+        <picture>
+          <img class="card__info-img" src="./images/room-layout.png" alt="план-схема квартиры">
           <source srcset="image/webp" src="images/webp/room-layout.webp">
         </picture>
 
@@ -46,7 +51,7 @@
             </li>
             <li class="card__specs-list-item">
               <div class="card__specs-list-item-caption">Площаль кухни</div>
-              <div class="card__specs-list-item-value">14,24 м<sub>2</sub></div>
+              <div class="card__specs-list-item-value">14,24 м<sup>2</sup></div>
             </li>
           </ul>
 
@@ -57,7 +62,7 @@
               </svg>
               <div class="card__status-text">Вы были на просмотре</div>
             </div>
-            <div class="card__status card__status_visited">
+            <div class="card__status card__status_accredited">
               <svg class="card__status-icon">
                 <use xlink:href="./images/symbol/sprite.svg#cross"></use>
               </svg>
@@ -73,9 +78,9 @@
           <span class="text_accent">19 сентября</span>
         </div>
         <div class="card__billings-price">3 312 666 Р</div>
-        <div class="card__billings-builder-price">
-          Текущая цена у застройщика дороже на 
-          <span class="text_alert">324 825 Р</span>
+        <div class="card__billings-builder">
+          <span class="line-break">Текущая цена у застройщика </span>
+          дороже на <span class="text_alert">324 825 Р</span>
         </div>
         <button class="button card__billings-button">
           <svg class="button__icon">
