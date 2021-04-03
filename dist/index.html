@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Nmarket test task</title>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div tabindex="0" class="card__close">
+        <svg class="card__close-icon">
+          <use xlink:href="./images/symbol/sprite.svg#close-icon"></use>
+        </svg>
+        <div class="card__close-bg"></div>
+      </div>
+      
+      <div class="card__info">
+        <picture>
+          <img class="card__info-img" src="./images/room-layout.png" alt="план-схема квартиры">
+          <source srcset="image/webp" src="images/webp/room-layout.webp">
+        </picture>
+
+        <div class="card__specs">
+          <h3 class="card__info-title">2-к квартира</h3>
+
+          <ul class="card__specs-list">
+            <li class="card__specs-list-item">
+              <div class="card__specs-list-item-caption">Этаж</div>
+              <div class="card__specs-list-item-value">3 из 19 </div>
+            </li>
+            <li class="card__specs-list-item">
+              <div class="card__specs-list-item-caption">Высота потолков</div>
+              <div class="card__specs-list-item-value">3,2 м</div>
+            </li>
+            <li class="card__specs-list-item">
+              <div class="card__specs-list-item-caption">Отделка</div>
+              <div class="card__specs-list-item-value">Предчистовая</div>
+            </li>
+            <li class="card__specs-list-item">
+              <div class="card__specs-list-item-caption">Общая площадь</div>
+              <div class="card__specs-list-item-value">32,24 м<sup>2</sup></div>
+            </li>
+            <li class="card__specs-list-item">
+              <div class="card__specs-list-item-caption">Жилая площадь</div>
+              <div class="card__specs-list-item-value">22,24 м<sup>2</sup></div>
+            </li>
+            <li class="card__specs-list-item">
+              <div class="card__specs-list-item-caption">Площаль кухни</div>
+              <div class="card__specs-list-item-value">14,24 м<sup>2</sup></div>
+            </li>
+          </ul>
+
+          <div class="card__statuses">
+            <div class="card__status card__status_visited">
+              <svg class="card__status-icon">
+                <use xlink:href="./images/symbol/sprite.svg#check"></use>
+              </svg>
+              <div class="card__status-text">Вы были на просмотре</div>
+            </div>
+            <div class="card__status card__status_accredited">
+              <svg class="card__status-icon">
+                <use xlink:href="./images/symbol/sprite.svg#cross"></use>
+              </svg>
+              <div class="card__status-text">Дом аккредитован другим банком</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card__billings">
+        <div class="card__billings-booking">
+          Ваша цена по брони до 
+          <span class="text_accent">19 сентября</span>
+        </div>
+        <div class="card__billings-price">3 312 666 Р</div>
+        <div class="card__billings-builder">
+          <span class="line-break">Текущая цена у застройщика </span>
+          дороже на <span class="text_alert">324 825 Р</span>
+        </div>
+        <button class="button card__billings-button">
+          <svg class="button__icon">
+            <use xlink:href="./images/symbol/sprite.svg#key"></use>
+          </svg>
+          <span class="button__text">Выбрать для покупки</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+@import './variables.scss';
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $main-text-color;
+  background-color: $bg-color;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1230px;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  padding: 12px 50px;
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 6px;
+  background-color: $btn-color;
+  transition: .2s;
+  cursor: pointer;
+  &:hover {
+    background-color: $hover-btn-color;
+  }
+  &:active {
+    background-color: $focus-btn-color;
+  }
+  &__icon {
+    margin-right: 8px;
+    max-width: 16px;
+    max-height: 16px;
+  }
+}
+
+.line-break {
+  display: block;
+}
+
+.text {
+  &_accent {
+    font-weight: 500;
+    color: $inform-color;
+  }
+  &_alert {
+    color: $error-color;
+    font-weight: 500;
+  }
+}
+
+@import './house-card';
+@import './media'

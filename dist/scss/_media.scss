@@ -1,0 +1,409 @@
+@media (max-width: 1280px) {
+  .button {
+    padding: 1vw 4.1vw;
+    font-size: 1.2vw;
+    border-radius: 6px;
+    &__icon {
+      margin-right: .8vw;
+      max-width: 1.3vw;
+      max-height: 1.3vw;
+    }
+  }
+  .card {
+    padding: 1.87vw 2.5vw 1.87vw 1.87vw;
+    border-radius: 8px;
+
+    &__close {
+      top: 2.5vw;
+      right: 2.5vw;
+
+      &-icon {
+        width: 1.87vw;
+        height: 1.87vw;
+      }
+
+      &-bg {
+        width: 2.2vw;
+        height: 2.2vw;
+        border-radius: 4px;
+      }
+    }
+
+    &__info {
+      display: flex;
+      align-items: center;
+
+      &-img {
+        margin-right: 2.5vw;
+        max-width: 13.9vw;
+      }
+
+      &-title {
+        margin-bottom: .8vw;
+        font-size: 1.87vw;
+      }
+    }
+
+    &__specs {
+      &-list {
+        &-item {
+          margin-bottom: 1vw;
+
+          &-caption {
+            margin-bottom: 2px;
+            font-size: 1vw;
+          }
+
+          &-value {
+            font-size: 1.1vw;
+          }
+        }
+      }
+    }
+
+    &__status {
+      padding: .7vw 1.5vw;
+      border-radius: 22px;
+
+      &:not(:last-child) {
+        margin-right: 1.25vw;
+      }
+
+      &-icon {
+        margin-right: .8vw;
+        max-width: 1.25vw;
+        max-height: 1.25vw;
+      }
+
+      &-text {
+        font-size: 1vw;
+      }
+    }
+
+    &__billings {
+      padding-left: 2.5vw;
+      max-width: 23.4vw;
+      &-booking {
+        margin-bottom: 5px;
+        font-size: 1.1vw;
+      }
+
+      &-price {
+        margin-bottom: 1vw;
+        font-size: 1.87vw;
+      }
+
+      &-builder {
+        margin-bottom: 23px;
+        font-size: 1.1vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 1140px) {
+
+  .card {
+    &__close {
+      top: 2.7vw;
+      right: 2.7vw;
+
+      &-icon {
+        width: 2.07vw;
+        height: 2.07vw;
+      }
+
+      &-bg {
+        width: 2.4vw;
+        height: 2.4vw;
+      }
+    }
+
+    &__info {
+      &-img {
+        margin-right: 2.7vw;
+        max-width: 14.1vw;
+      }
+
+      &-title {
+        margin-bottom: 1vw;
+        font-size: 2.07vw;
+      }
+    }
+
+    &__specs {
+      &-list {
+        &-item {
+          margin-bottom: 1.2vw;
+          &-caption {
+            font-size: 1.2vw;
+          }
+
+          &-value {
+            font-size: 1.3vw;
+          }
+        }
+      }
+    }
+
+    &__status {
+      padding: .8vw 1.6vw;
+
+      &:not(:last-child) {
+        margin-right: 1.45vw;
+      }
+
+      &-icon {
+        margin-right: .8vw;
+        max-width: 1.45vw;
+        max-height: 1.45vw;
+      }
+
+      &-text {
+        font-size: 1.2vw;
+      }
+    }
+
+    &__billings {
+      padding-left: 2.7vw;
+      max-width: 23.6vw;
+
+      &-booking {
+        font-size: 1.2vw;
+      }
+
+      &-price {
+        margin-bottom: 1.2vw;
+        font-size: 2.07vw;
+      }
+
+      &-builder {
+        font-size: 1.3vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .button {
+    padding: 1.4vw 6.1vw;
+    &__icon {
+      margin-right: 1vw;
+      max-width: 1.7vw;
+      max-height: 1.7vw;
+    }
+    &__text {
+      font-size: 1.55vw;
+    }
+  }
+  .card {
+    padding: 2.65vw 3.5vw 2.65vw 2.65vw;
+    &__close {
+      top: 3.5vw;
+      right: 3.5vw;
+      &-icon {
+        width: 2.65vw;
+        height: 2.65vw;
+      }
+      &-bg {
+        width: 3vw;
+        height: 3vw;
+      }
+    }
+    &__info {
+      align-items: flex-start;
+      &-img {
+        max-width: 19.4vw;
+      }
+      &-title {
+        margin-bottom: 1vw;
+        font-size: 2.67vw;
+      }
+    }
+    &__specs {
+      &-list {
+        margin-bottom: 2vw;
+        &-item {
+          width: 50%;
+          &-caption {
+            font-size: 1.4vw;
+          }
+          &-value {
+            font-size: 1.55vw;
+          }
+        }
+      }
+    }
+    &__status {
+      &es {
+        flex-direction: column;
+        align-items: flex-start
+      }
+      padding: 0.9vw 1.8vw;
+      &-text {
+        font-size: 1.4vw;
+      }
+      &-icon {
+        max-width: 1.75vw;
+        max-height: 1.75vw;
+      }
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 1vw;
+      }
+    }
+
+    &__billings {
+      max-width: 32.7vw;
+      &-booking {
+        font-size: 1.6vw;
+      }
+      &-price {
+        margin-bottom: 1.35vw;
+        font-size: 2.65vw;
+      }
+      &-builder {
+        margin-bottom: 14vw;
+        font-size: 1.55vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .button {
+    padding: 12px 50px;
+    width: 100%;
+    justify-content: center;
+
+    &__icon {
+      max-width: 12px;
+      max-height: 12px;
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+  }
+
+  .card {
+    padding: 24px 32px;
+    flex-direction: column;
+    &__close {
+      top: 32px;
+      right: 32px;
+
+      &-icon {
+        width: 24px;
+        height: 24px;
+      }
+
+      &-bg {
+        width: 28px;
+        height: 28px;
+      }
+    }
+
+    &__info {
+      padding-bottom: 16px;
+      width: 100%;
+      align-items: flex-start;
+      border-bottom: 1px solid $border-color;
+
+      &-img {
+        max-width: 178px;
+      }
+
+      &-title {
+        margin-bottom: 8px;
+        font-size: 24px;
+      }
+    }
+
+    &__specs {
+      &-list {
+        margin-bottom: 2vw;
+
+        &-item {
+          margin-bottom: 12px;
+          width: 50%;
+
+          &-caption {
+            font-size: 12px;
+          }
+
+          &-value {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    &__status {
+      &es {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      padding: 9px 12px;
+
+      &-text {
+        font-size: 12px;
+      }
+
+      &-icon {
+        margin-right: 8px;
+        max-width: 16px;
+        max-height: 16px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 8px;
+        margin-right: 16px;
+      }
+      &:last-child {
+        margin-bottom: 8px;
+      }
+    }
+
+    &__billings {
+      padding-left: 0;
+      padding-top: 24px;
+      max-width: 100%;
+      border-left: none;
+      &-booking {
+        font-size: 14px;
+      }
+
+      &-price {
+        margin-bottom: 12px;
+        font-size: 24px;
+      }
+
+      &-builder {
+        margin-bottom: 24px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .card {
+    padding: 20px;
+    &__info {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__billings {
+      &-button {
+        padding: 12px 30px;
+      }
+    }
+  }
+}
